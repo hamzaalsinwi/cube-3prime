@@ -108,7 +108,9 @@ grep -n "NO REPRESENTATION FOUND" results.txt > counterexamples.txt
 ```
    * **PowerShell**
 ```bash
-Select-String -Path results.txt -Pattern "NO REPRESENTATION FOUND" | ConvertTo-Csv -NoTypeInformation > counterexamples.csv
+Select-String -Path results.txt -Pattern "NO REPRESENTATION FOUND" | ForEach-Object {
+    "$($_.LineNumber),$($_.Line)"
+} | Set-Content counterexamples.csv
 ```
 
 > **Status note:** We have already scanned the full allowable range ( 3 ≤ n ≤ 2 642 245 ) with the current settings (distinct primes, `p, q ≤ 10⁸`) and obtained zero counter-examples. The steps above are provided for clarity and for anyone who reruns the experiment under different parameters.
