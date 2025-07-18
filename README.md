@@ -86,13 +86,19 @@ To be sure that every cubic number `n³` in the tested range was successfully ex
 2. Run **one** of the following commands, depending on your system:
 
    * **Linux / macOS**  
-     ```grep -c "NO REPRESENTATION FOUND" results.txt```
+```bash
+grep -c "NO REPRESENTATION FOUND" results.txt 
+```
 
    * **Windows (PowerShell ≥ 5)**  
-     ```Select-String -Path results.txt -Pattern "NO REPRESENTATION FOUND" | Measure-Object```
+```bash 
+Select-String -Path results.txt -Pattern "NO REPRESENTATION FOUND" | Measure-Object
+```
 
    * **Windows (cmd.exe legacy)**  
-     ```findstr /C:"NO REPRESENTATION FOUND" results.txt | find /C /V ""```
+```bash
+findstr /C:"NO REPRESENTATION FOUND" results.txt | find /C /V ""
+```
 
 3. If the command prints `0`, there are no counter-examples in the file; otherwise the printed number equals the count of failures.  
    To inspect them in detail, save the offending lines with line numbers:
