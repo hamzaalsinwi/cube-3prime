@@ -102,8 +102,14 @@ findstr /C:"NO REPRESENTATION FOUND" results.txt | find /C /V ""
 
 3. If the command prints `0`, there are no counter-examples in the file; otherwise the printed number equals the count of failures.  
    To inspect them in detail, save the offending lines with line numbers:
-   * **Linux / macOS** – `grep -n "NO REPRESENTATION FOUND" results.txt > counterexamples.txt`  
-   * **PowerShell** – `Select-String -Path results.txt -Pattern "NO REPRESENTATION FOUND" | ConvertTo-Csv -NoTypeInformation > counterexamples.csv`
+   * **Linux / macOS**
+```bash
+grep -n "NO REPRESENTATION FOUND" results.txt > counterexamples.txt
+```
+   * **PowerShell**
+```bash
+Select-String -Path results.txt -Pattern "NO REPRESENTATION FOUND" | ConvertTo-Csv -NoTypeInformation > counterexamples.csv
+```
 
 > **Status note:** We have already scanned the full allowable range ( 3 ≤ n ≤ 2 642 245 ) with the current settings (distinct primes, `p, q ≤ 10⁸`) and obtained zero counter-examples. The steps above are provided for clarity and for anyone who reruns the experiment under different parameters.
 
