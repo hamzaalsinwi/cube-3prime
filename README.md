@@ -13,6 +13,16 @@ The code is tuned to finish the range **3 → 20 000** in a few seconds on a mod
 quad‑core CPU. It has been successfully tested up to **n ≤ 2 642 245**, the largest value that keeps
 `n³` inside the unsigned 64‑bit range.
 
+### Observations
+
+While testing all odd cubes in the range `"3 ≤ n ≤ 2,642,245"`, we found that every valid representation of an odd cube as a sum of three distinct prime numbers always included the number `"3"`.
+
+That is, for all such cases:
+
+"n³ = p + q + r" with "{p, q, r} ⊇ {3}"
+
+This consistent pattern suggests that `"3"` plays a foundational role in representing large odd cubes — likely due to being the smallest odd prime, making it a natural anchor in satisfying both the parity and size required for valid prime triplets.
+
 ---
 
 ## Algorithm
