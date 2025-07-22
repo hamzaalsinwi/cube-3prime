@@ -75,16 +75,18 @@ representation (or a “NO REPRESENTATION FOUND” line) to `results.txt`.
 
 ## Performance notes
 
-* The program was tested on a Lenovo IdeaPad Pro 5 16IRH8 laptop with an ~5.3_3.5 GHz Intel Core i7 (13th Gen) processor, running in High Performance Mode.
-* It utilized **20 threads** at full capacity with no thermal, power, or memory throttling.
+| Metric                     | Details                                                   |
+|---------------------------|------------------------------------------------------------|
+| **Laptop tested on**      | Lenovo IdeaPad Pro 5 16IRH8 (Intel Core i7, 13th Gen)     |
+| **CPU speed**             | ~5.3 GHz turbo / 3.5 GHz base                              |
+| **Threads used**          | 20 (full capacity, no thermal/power throttling)           |
+| **Tested range**          | From `n = 3` to `n = 2,642,245` (≈2.6 million cubes)       |
+| **Execution time**        | ≈ 7.3 minutes                                              |
+| **RAM usage**             | Starts ~2–3 GB, peaks at 4.5 GB                            |
+| **RAM type**              | 16 GB DDR5                                                 |
+| **Alternate benchmark**   | Ryzen 5 (3.5 GHz, 4c/8t): `3 → 20 000` in ≈19.2 seconds     |
+| **Memory footprint (sieve)** | ≤ 110 MiB (100M-bit sieve dominates usage)             |
 
-* Tested range: from 3 to 2,642,245 (≈2.6 million cube values)
-* Execution time: **≈ 7.3 minutes**
-* Memory usage: started at **~2–3 GB** and peaked at **4.5 GB**
-* RAM: 16 GB DDR5
-* On a 3.5 GHz Ryzen 5 (4 cores / 8 threads) the default range `3→20 000`
-completes in **≈ 19.2s**.
-* Memory footprint is **≤ 110 MiB** (dominated by the 100 Mbit sieve).
 
 ---
 
