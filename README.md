@@ -37,10 +37,7 @@ Miller–Rabin test, proven deterministic for the 64‑bit range, is used.
 
 3. **Search strategy**
 * **Phase 0** – If `n³` is even, try the pattern `2 + p + q`.
-* **Phase 1** – Double loop over distinct small primes`p` and `q`;
-compute:
-
-`r = n³ − p − q` and test `r` with Miller–Rabin.
+* **Phase 1** – Double loop over distinct small primes`p`and`q`;               compute `r = n³ − p − q` and test `r` with Miller–Rabin.
 
 4. **Parallelism** – A simple work‑stealing counter distributes consecutive `n`
 values to a pool of worker threads (`thread::hardware_concurrency()`).
