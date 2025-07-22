@@ -2,7 +2,7 @@
 # cube_cubeprime_fast
 
 ## Overview
-This program tests the **cubic cube three‑prime conjecture** that every integer cube `n³` (for `n > 2`)
+This program tests the  **Cube-Three-Prime Conjecture**:that every integer cube `n³` (for `n > 2`)
 can be expressed as the sum of **three distinct prime numbers**:
 
 ```
@@ -140,23 +140,7 @@ faster large‑prime rejection.
 * Extending the search to the full 128-bit domain (i.e., `n³ < 2¹²⁸`, so `n ≤ ≈ 7 × 10¹²`) is arithmetically straightforward with 128-bit limbs, and ranges of a few million `n` remain tractable on contemporary CPUs; however, covering the entire space would need massive parallelism—porting the tight inner loops to CUDA/OpenCL and running on multi-GPU hardware (or GPU clusters) is the most practical way to achieve the required throughput.
 
 ---
-## 🇵🇸 About Gaza
-
-**This project is dedicated to the resilient people of Gaza.**
-
-At the time of writing, they are enduring a **brutal genocide** and **forced starvation** under a relentless siege.
-
-- **Food**, **water**, **medicine**, and **electricity** are deliberately cut off.  
-- **Civilians are being targeted**, and even **hospitals and shelters** are not spared.  
-- There is no safety — only suffering.
-
-We write this with **heavy hearts**, praying for **justice**, **mercy**, and **freedom** for Gaza.
-
-> _“And your Lord is never forgetful.”_ — **Surah Maryam, 64**
-
-**O Allah, be with the people of Gaza.**  
-**O Allah, destroy the oppressors and those who support them.**
-
+For the human and moral dedication behind this project, see: [README_gaza.md](./README_gaza.md)
 
 ---
 
