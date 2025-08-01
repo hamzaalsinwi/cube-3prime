@@ -84,7 +84,7 @@ representation (or a “NO REPRESENTATION FOUND” line) to `results.txt`.
 | **RAM usage**             | Starts ~2–3 GB, peaks at 4.5 GB                            |
 | **RAM type**              | 16 GB DDR5                                                 |
 | **Alternate benchmark**   | Ryzen 5 (3.5 GHz, 4c/8t): `3 → 20 000` in ≈19.2 seconds     |
-| **Memory footprint (sieve)** | ≤ 110 MiB (100M-bit sieve dominates usage)             |
+| **Memory footprint (sieve)** | ≤ 110 MiB (~100M-byte sieve dominates usage)             |
 
 
 ---
