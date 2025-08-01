@@ -27,7 +27,7 @@ This consistent pattern suggests that `"3"` plays a foundational role in represe
 
 ## Algorithm
 
-1. **Prime sieve** – A compact bit‑array sieve of Eratosthenes up to **100 million**
+1. **Prime sieve** – A compact byte‑array sieve of Eratosthenes up to **100 million**
 is built once at program start.
 * All primes are kept in a vector for fast iteration.
 * Primality checks for small numbers reuse this table directly.
