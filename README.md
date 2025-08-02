@@ -15,8 +15,7 @@ quad‑core CPU. It has been successfully tested up to **n ≤ 2 642 245**, 
 
 ### Observations
 
-While testing all odd cubes in the range `"3 ≤ n ≤ 2,642,245"`, we found that every valid representation of an odd cube as a sum of three distinct prime numbers always included the number `"3"`.
-
+While testing all odd cubes in the range "3 ≤ n ≤ 2,642,245", we found that every cube had at least one valid representation as the sum of three distinct primes that included the number "3".
 That is, for all such cases:
 
 "n³ = p + q + r" with "{p, q, r} ⊇ {3}"
