@@ -141,7 +141,7 @@ faster large‑prime rejection.
 * Extending the search to the full 128-bit domain (i.e., `n³ < 2¹²⁸`, so `n ≤ ≈ 7 × 10¹²`) is arithmetically straightforward with 128-bit limbs, and ranges of a few million `n` remain tractable on contemporary CPUs; however, covering the entire space would need massive parallelism—porting the tight inner loops to CUDA/OpenCL and running on multi-GPU hardware (or GPU clusters) is the most practical way to achieve the required throughput.
 
 ---
-###For the human and moral dedication behind this project, see: [README_gaza.md](./README_gaza.md)
+### For the human and moral dedication behind this project, see: [README_gaza.md](./README_gaza.md)
 
 ---
 
