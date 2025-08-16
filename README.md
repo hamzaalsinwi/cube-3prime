@@ -67,8 +67,7 @@ end n (3-2642245): 20000
 done: 19998 lines → results.txt
 ```
 
-The program asks for **inclusive** start / end values and writes every
-representation (or a “NO REPRESENTATION FOUND” line) to `results.txt`.
+The program asks for **inclusive** start / end values and writes one valid representation (or a “NO REPRESENTATION FOUND” line) to results.tx.
 
 ---
 
